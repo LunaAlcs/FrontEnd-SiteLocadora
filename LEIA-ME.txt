@@ -1,0 +1,17 @@
+               FRONT-END
+==============|CHECK-LIST=================
+               03/01/2025
+                  45%
+- Ajustar a resolução da navbar [OK]
+- Desenvolver a pagina de Cadastro [OK] 04/01
+- Linkar todas as paginas [OK]
+- Adicionar link no logo da navbar [OK]
+- Centralizar o icone do logo no rodape
+- Organizar as pastas do projeto [OK]
+- Garantir consistencia nas cores entre as paginas [OK] 04/01
+- Limpar o codigo, removendo funçoes repetidas
+- Organizar as anotações do codigo
+- Aumentar o numero de carros no catalogo
+- Ajustar a seção de Equipe
+- Conferir e ajustar Rodape [OK]
+- Integrar o Ingles [OK]

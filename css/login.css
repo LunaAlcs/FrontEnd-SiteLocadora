@@ -1,0 +1,316 @@
+/* ========FONTE======== */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400;600;800&display=swap');
+
+/* ========VARIÁVEIS DE CORES========= */
+:root {
+    /*==========SITE=========*/
+    --cor-fundo: #dadada;
+    --cor-primaria: #202020;
+    --cor-secundaria: ;    
+    --cor-titulo: #030303;
+    --cor-texto: #131313;
+    --cor-texto3: #f0f0f0;
+    --cor-detalhe: #313131;
+    --cor-conteiner: #ffffff;
+
+    /*==========RODAPE=========*/
+    --cor-fundofooter: #0b0b0b;
+    --cor-titulofooter: #8d8d8d;
+    --cor-texto2: #545454;
+    --cor-button: #c5c5c5;
+    --cor-link: #1c304e;
+}
+
+/* ========ESTILOS GERAIS DO CORPO========= */
+* {
+    font-family: 'Nunito Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+}
+
+html, body {
+    background-color: var(--cor-fundo) !important;
+    margin: 0;
+    padding: 0;
+
+
+}
+
+/* Cor de fundo da navbar */
+.navbar.bg-body-tertiary {
+    background-color: var(--cor-primaria) !important;
+}
+
+/* Cor do texto do título da navbar */
+.navbar-brand {
+    color: var(--cor-detalhe) !important;
+}
+
+/* Estilo para a imagem do logo na navbar */
+.navbar-brand img {
+    height: 25px;         
+    width: auto;           
+    max-height: 30px;      
+    margin-right: 20px;    
+}
+
+/* Cor de fundo dos itens de navegação */
+.navbar-nav .nav-link {
+    letter-spacing: 1px;
+    color: var(--cor-texto3) !important;  
+}
+
+/* Cor do link ativo */
+.navbar-nav .nav-link.active {
+    color: var(--cor-fundo) !important;    
+}
+
+/* Cor de fundo quando o item é "hovered" */
+.navbar-nav .nav-link:hover {
+    background-color: var(--cor-detalhe); 
+    color: var(--cor-texto3) !important;
+}
+
+/* Cor de fundo do dropdown */
+.navbar-nav .dropdown-menu {
+    background-color: var(--cor-primaria);
+}
+
+/* Cor dos itens dentro do dropdown */
+.navbar-nav .dropdown-item {
+    color: var(--cor-texto3)!important;
+}
+
+/* Cor quando o item do dropdown é "hovered" */
+.navbar-nav .dropdown-item:hover {
+    background-color: var(--cor-detalhe); 
+    color: var(--cor-texto3) !important;
+}
+
+/* Cor do item ativo */
+.navbar-nav .nav-link.active {
+    color: var(--cor-texto3) !important; 
+}
+
+/* ========ESTILOS DO CONTAINER DO LOGIN========= */
+#content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    margin-top: 100px;
+    margin-bottom: 75px;
+
+
+}
+#login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    max-width: 400px; /* Limitando a largura máxima */
+    background-color: var(--cor-conteiner);
+    border: solid black 1px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    margin: 0 10px; /* Ajuste para evitar comprimido em telas pequenas */
+}
+
+
+.caixa {
+    padding: 20px;
+}
+
+/* ========ESTILOS DA IMAGEM NO LOGIN========= */
+#login img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 20px;
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura do container */
+}
+
+/* ========TÍTULO DE LOGIN========= */
+h1 {
+    color: var(--cor-primaria);
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+/* ========ESTILOS DOS CAMPOS DE ENTRADA (email e senha)========= */
+.email, .senha {
+    margin-bottom: 15px;
+}
+
+.email input, .senha input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--cor-detalhe);
+    border-radius: 5px;
+    font-size: 16px;
+    color: var(--cor-texto);
+    background-color: var(--cor-fundo);
+    transition: border 0.3s ease;
+}
+
+.email input:focus, .senha input:focus {
+    border-color: var(--cor-primaria);
+    outline: none;
+}
+
+/* ========ESTILOS DO BOTÃO DE ENTRAR========= */
+.entrar input {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--cor-primaria);
+    color: var(--cor-texto3);
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.entrar input:hover {
+    background-color: var(--cor-detalhe);
+}
+
+/* ========TEXTOS DE AJUDA========= */
+.entrar p {
+    color: var(--cor-titulo);
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.entrar a {
+    color: var(--cor-link);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.entrar a:hover {
+    text-decoration: underline;
+}
+
+/* ========RESPONSIVO========= */
+@media screen and (max-width: 480px) {
+    #login {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    .email input, .senha input {
+        font-size: 14px;
+    }
+
+    .entrar input {
+        font-size: 14px;
+    }
+}
+
+/* ========== RODAPE ========= */
+footer {
+    background-color: var(--cor-fundofooter);
+    padding: 5px;
+    margin-top: 40px;
+    padding-top: 20px;
+}
+
+#footer_content {
+    font-size: 13px;
+    padding: 9px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    justify-items: center; /* Garante que os itens fiquem centralizados */
+}
+
+#footer_social i {
+    font-size: 30px;
+    margin: 0 10px;
+}
+
+/* FOOTER LOGO E TEXTO */
+.footer_logo p {
+    text-align: right;
+    color: var(--cor-texto2);
+}
+
+#footer_img {
+    margin-left: 35px;
+    width: 80px;
+    height: auto;
+    margin-bottom: 2px;
+    margin-top: 2px;
+}
+
+/* LINKS DO FOOTER */
+.footer-link {
+    color: var(--cor-titulofooter);
+    text-decoration: none;
+}
+
+.footer_list {
+    color: var(--cor-titulofooter);
+    display: grid;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.footer-link {
+    color: var(--cor-texto2);
+}
+
+/* INSCRIÇÃO */
+#footer_subscribe h3 {
+    font-size: 30px;
+    color: var(--cor-titulofooter);
+}
+
+#footer_subscribe p {
+    color: var(--cor-texto2);
+}
+
+#footer_subscribe {
+    font-size: 15px;
+    display: grid;
+    place-items: center;
+}
+
+#footer-copy {
+    color: #545454;
+    font-size: 12px;
+    margin: 8px;
+    padding: 8px;
+}
+
+/* EMAIL SUBSCRIBE BOX */
+.fa-regular {
+    background-color: var(--cor-fundo);
+}
+
+#button-email {
+    background-color: var(--cor-fundo);
+    width: 25px;
+    height: 25.5px;  /* Corrigido o erro de vírgula */
+    border-color: var(--cor-detalhe);
+}
+
+#email {
+    background-color: var(--cor-fundo);
+    width: 160px;
+    height: 25px;
+    border-color: var(--cor-detalhe);
+    color: var(--cor-texto1);
+}
+

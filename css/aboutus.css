@@ -1,0 +1,375 @@
+/* ========FONTE======== */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
+/* Fonte padrão global para todo o site */
+/* Fonte padrão para o site inteiro */
+* {
+    font-family: 'Nunito Sans', sans-serif; /* Definindo Nunito Sans como fonte padrão para todo o site */
+}
+
+/* Mantém a fonte padrão para rodapé e navegação */
+footer, nav {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+
+:root {
+    /*==========SITE=========*/
+    --cor-fundo: #dadada;  
+    --cor-primaria: #202020;
+    --cor-secundaria: ;    
+    --cor-titulo:#030303;
+    --cor-texto: #131313;  
+    --cor-texto3: #f0f0f0;  
+    --cor-detalhe:#313131; 
+    --cor-conteiner:#ffffff;
+
+    /*==========RODAPE=========*/
+    --cor-fundofooter: #0b0b0b;                     
+    --cor-titulofooter: #8d8d8d;   
+    --cor-texto2: #545454;        
+    --cor-button: #c5c5c5;        
+    --cor-link: #1c304e;    
+    }       
+/* ========FONTE======== */
+* {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+}
+
+html body {
+    background-color: var(--cor-texto3);
+    margin: 0;
+    padding: 0;
+    font-family: "Playfair Display", serif; /* Aplica Playfair Display globalmente */
+}
+
+/* Cor de fundo da navbar */
+.navbar.bg-body-tertiary {
+    background-color: var(--cor-primaria) !important;
+}
+
+/* Cor do texto do título da navbar */
+.navbar-brand {
+    color: var(--cor-detalhe) !important;  /
+}
+
+/* Estilo para a imagem do logo na navbar */
+.navbar-brand img {
+    height: 25px;         
+    width: auto;           
+    max-height: 30px;      
+    margin-right: 20px;    
+}
+
+/* Cor de fundo dos itens de navegação */
+.navbar-nav .nav-link {
+    font-family: 'Nunito Sans', sans-serif;
+    letter-spacing: 1px;
+    color: var(--cor-texto3) !important;  
+}
+
+/* Cor do link ativo */
+.navbar-nav .nav-link.active {
+    color: var(--cor-fundo) !important;    
+}
+  /* Cor de fundo quando o item é "hovered" */
+  .navbar-nav .nav-link:hover {
+    background-color: var(--cor-detalhe); 
+    color: var(--cor-texto3) !important;
+  }
+  
+  /* Cor de fundo do dropdown */
+  .navbar-nav .dropdown-menu {
+    background-color: var(--cor-primaria);
+  }
+  
+  /* Cor dos itens dentro do dropdown */
+  .navbar-nav .dropdown-item {
+    color: var(--cor-texto3)!important;
+  }
+  
+  /* Cor quando o item do dropdown é "hovered" */
+  .navbar-nav .dropdown-item:hover {
+    background-color: var(--cor-detalhe); 
+    color: var(--cor-texto3) !important;
+  }
+  
+  /* Cor do item ativo */
+  .navbar-nav .nav-link.active {
+    color: var(--cor-texto3) !important; 
+  }
+  /* BOTAO */
+  .nav-item {
+    font-family: 'Nunito Sans', sans-serif;
+    letter-spacing: 1px;
+
+}
+/* =======MEIO======*/
+section {
+    align-items: center;
+    height: 100%;
+    margin-left: 120px;
+    margin-right: 120px;
+    margin-bottom: 30px;
+    margin-top: 1px;
+    padding: 1px;
+}
+
+/* O contêiner pai que vai centralizar o conteúdo */
+.wrapper {
+    display: flex; 
+    justify-content: center;  /* Centraliza horizontalmente */
+    align-items: center;  /* Centraliza verticalmente */
+}
+
+/* Estilo do título "SOBRE NOS" */
+.titleabout h1 {
+    color: var(--cor-titulo);  /* Cor do título */
+    margin-top: 90px;  /* Mantém o título abaixo da navbar */
+    margin-bottom: 1px;
+    text-align: center;  /* Centraliza o texto */
+    font-family: 'Playfair Display', serif !important;
+    font-weight: 400;
+}
+
+/* Estilo do contêiner com borda e fundo */
+.conteiner {
+    width: 600px;  /* Largura do contêiner */
+    height: auto;  /* Altura ajusta-se ao conteúdo */
+    padding: 50px;  /* Ajuste o preenchimento interno conforme necessário */
+    margin-left: 15%;
+    margin-top: 2px;
+    margin-bottom: 20px;
+    background-color: var(--cor-conteiner);
+    text-align: none;  /* Centraliza o texto dentro do box */
+    color: var(--cor-texto);  /* Cor do texto */
+    font-family: 'Playfair Display', serif; /* Aplica Playfair Display somente no conteiner */
+}
+
+/* Aplique a fonte Playfair Display para o título (h3) e o texto (h6) dentro de .conteiner */
+.conteiner h3 {
+    text-align: center;
+    font-family: 'Playfair Display', serif !important;
+    font-weight: 500;
+}
+
+.conteiner h6 {
+    text-align: center;
+    margin-top: 2px;
+    font-family: 'Playfair Display', serif !important;
+    font-weight: 200;
+}
+
+.img-text img {
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 80px;
+    width: 22rem;
+    border-radius: 1%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+}  
+hr {
+    background-color: var(--cor-detalhe);
+}
+/* ========== EQUIPE ========= */
+.team {
+
+    text-align: center;
+    margin-top: none;
+    margin: 0px;
+}
+.tconteiner {
+    background-color: var(--cor-primaria);
+    width: 100%;
+    height: 100%;
+    margin-top: 0px;
+}
+.box-team {
+    margin: 30px;
+    height: 600px;
+    width: 700px;
+}
+.team-list {
+    display: flex;
+    background-color: none;
+    color: var(--cor-texto3);
+}
+.team-list a {
+    outline: none;  /* Remove o contorno */
+    text-decoration: none;  /* Remove o sublinhado */
+
+}
+.team h1,h5, h3, h6,b {
+    font-family: 'Nunito Sans', sans-serif !important; /* Aplica a fonte ao footer */
+    letter-spacing: 1px;
+    color: var(--cor-titulo);
+
+}
+.team h1 {
+    margin: 3%;
+    color: var(--cor-texto3);
+}
+.team h5, b {
+    margin: 3%;
+    color: var(--cor-texto3);
+}
+.team h6 {
+    margin: 3%;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.tconteiner li {
+    background-color: #272727;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    list-style: none;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.tconteiner img {
+    align-items: 100%;
+    width:11rem;
+    height: 10rem;
+    border-radius: 100%;
+}
+.team-social img {
+    font-size: 17px; 
+    margin: 5px; 
+ 
+
+}
+
+
+
+
+/* ========== RODAPE========= */
+/* Garantir que a fonte 'Nunito Sans' seja aplicada a todo o footer */
+footer {
+    background-color: var(--cor-fundofooter);
+    border-top: 20px solid var(--cor-fundofooter);
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+/* Aplica a fonte apenas aos elementos de texto dentro do footer */
+.footer_list, .footer-link, .footer-subscribe h3 {
+    font-family: 'Nunito Sans', sans-serif !important; /* Aplica a fonte ao footer */
+    letter-spacing: 1px;
+    font-family: inherit !important;
+}
+
+/* Estilo do conteúdo dentro do footer */
+#footer_content {
+    font-size: 13px;
+    padding: 9px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    justify-items: center; /* Garante que os itens fiquem centralizados */
+}
+
+/* Estilo para os ícones sociais */
+#footer_social i {
+    font-size: 30px; 
+    margin: 10px; 
+}
+
+/* Estilo do logo e texto do footer */
+.footer_logo p { /* texto linha */
+    text-align: right;
+    font-family: 'Nunito Sans', sans-serif !important; /* Aplica a fonte ao footer */
+    letter-spacing: 1px;
+    color: var(--cor-texto2);
+}
+
+.footer_logo img {
+    align-items: right;
+    width: 80px;
+    height: auto;
+    margin-bottom: 8px;
+    margin-top: 8px;
+}
+.footer-title {
+    font-family: 'Nunito Sans', sans-serif !important; /* Aplica a fonte ao footer */
+    letter-spacing: 1px;
+}
+
+.footer-link {
+    font-family: 'Nunito Sans', sans-serif !important; /* Aplica a fonte ao footer */
+    letter-spacing: 1px;
+    color: var(--cor-texto2);
+    text-decoration: none;
+}
+
+.footer_list {
+    color: var(--cor-titulofooter);
+    display: grid;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+/* Estilos para a seção de inscrição no footer */
+#footer_subscribe h3 {
+    font-family: 'Nunito Sans', sans-serif !important; /* Aplica a fonte ao footer */
+    letter-spacing: 1px;
+    font-size: 30px;
+    color: var(--cor-texto2);
+}
+
+#footer_subscribe p {
+    font-family: 'Nunito Sans', sans-serif !important; /* Aplica a fonte ao footer */
+    letter-spacing: 1px;
+    color: var(--cor-texto2);
+}
+
+#footer_subscribe {
+    
+    font-size: 15px;
+    margin: 10;
+    padding: 10px ;
+    display: grid;
+    place-items: center;
+}
+
+#footer-copy {
+        font-family: 'Nunito Sans', sans-serif !important; /* Aplica a fonte ao footer */
+    letter-spacing: 1px;
+    color: #545454;
+    font-size: 12px;
+    margin: 8px;
+    padding: 8px;
+}
+
+/* Estilo do box de inscrição por email */
+.fa-regular {
+    background-color: var(--cor-fundo);
+}
+
+#button-email {
+    background-color: var(--cor-fundo);
+    width: 25px;
+    height: 25.5px;
+    border-color: var(--cor-detalhe);
+}
+
+#email {
+    background-color: var(--cor-fundo);
+    width: 160px;
+    height: 25px;
+    border-color: var(--cor-detalhe);
+    color: var(--cor-texto1);
+}
+
+
+
+
+
+
+

@@ -1,0 +1,323 @@
+/* ========FONTE======== */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400;600;800&display=swap');
+
+/* Fonte padrão global para todo o site */
+/* Fonte padrão para o site inteiro */
+* {
+    font-family: 'Nunito Sans', sans-serif; /* Definindo Nunito Sans como fonte padrão para todo o site */
+}
+
+/* Mantém a fonte padrão para rodapé e navegação */
+footer, nav {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+
+:root {
+    /*==========SITE=========*/
+    --cor-fundo: #dadada;  
+    --cor-primaria: #202020;
+    --cor-secundaria: ;    
+    --cor-titulo:#030303;
+    --cor-texto: #131313;  
+    --cor-texto3: #f0f0f0;  
+    --cor-detalhe:#313131; 
+    --cor-conteiner:#ffffff;
+
+    /*==========RODAPE=========*/
+    --cor-fundofooter: #0b0b0b;                     
+    --cor-titulofooter: #8d8d8d;   
+    --cor-texto2: #545454;        
+    --cor-button: #c5c5c5;        
+    --cor-link: #1c304e;    
+    }       
+    * {
+        font-family: 'Nunito Sans', sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        letter-spacing: 1px;
+    }
+    
+    html body {
+        background-color: var(--cor-fundo);
+        margin: 0;
+        padding: 0;
+    }
+
+/* Cor de fundo da navbar */
+.navbar.bg-body-tertiary {
+    background-color: var(--cor-primaria) !important;
+}
+
+/* Cor do texto do título da navbar */
+.navbar-brand {
+    color: var(--cor-detalhe) !important;  /
+}
+
+/* Estilo para a imagem do logo na navbar */
+.navbar-brand img {
+    height: 25px;         
+    width: auto;           
+    max-height: 30px;      
+    margin-right: 20px;    
+}
+
+/* Cor de fundo dos itens de navegação */
+.navbar-nav .nav-link {
+    font-family: 'Nunito Sans', sans-serif;
+    letter-spacing: 1px;
+    color: var(--cor-texto3) !important;  
+}
+
+/* Cor do link ativo */
+.navbar-nav .nav-link.active {
+    color: var(--cor-fundo) !important;    
+}
+  /* Cor de fundo quando o item é "hovered" */
+  .navbar-nav .nav-link:hover {
+    background-color: var(--cor-detalhe); 
+    color: var(--cor-texto3) !important;
+  }
+  
+  /* Cor de fundo do dropdown */
+  .navbar-nav .dropdown-menu {
+    background-color: var(--cor-primaria);
+  }
+  
+  /* Cor dos itens dentro do dropdown */
+  .navbar-nav .dropdown-item {
+    color: var(--cor-texto3)!important;
+  }
+  
+  /* Cor quando o item do dropdown é "hovered" */
+  .navbar-nav .dropdown-item:hover {
+    background-color: var(--cor-detalhe); 
+    color: var(--cor-texto3) !important;
+  }
+  
+  /* Cor do item ativo */
+  .navbar-nav .nav-link.active {
+    color: var(--cor-texto3) !important; 
+  }
+  /* BOTAO */
+  .nav-item {
+    font-family: 'Nunito Sans', sans-serif;
+    letter-spacing: 1px;
+}
+    
+    
+/* Estilo para o Carrossel */
+#carouselExampleAutoplaying .carousel-inner {
+    max-width: 100%;
+    min-height: 100vh; /* A altura mínima será a altura da tela */
+  }
+  
+  #carouselExampleAutoplaying .carousel-item img {
+    object-fit: cover; /* Faz com que a imagem preencha todo o espaço disponível sem distorcer */
+    width: 100%; /* A imagem vai ocupar toda a largura */
+    height: 100vh; /* A altura da imagem será sempre igual à altura da tela */
+    object-position: center; /* A imagem será centralizada dentro do carrossel */
+    margin-top: 55px;
+  }
+  
+  
+  /* Navbar fixada no topo */
+  .navbar.bg-body-tertiary {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999; /* Garante que a navbar fique sempre por cima */
+  }
+  
+    /* ========================== Carrossel ========================== */
+
+/* Estilo para o Carrossel */
+.carousel-item img {
+    object-fit: cover;  /* Faz com que as imagens cubram todo o espaço */
+    height: 130vh;  /* Define uma altura de 60% da altura da janela */
+    width: 100%;   /* A largura será sempre 100% */
+}
+
+/* Controlar a cor do indicador de navegação */
+.carousel-indicators [data-bs-target] {
+    background-color: var(--cor-detalhe);  /* Cor dos indicadores */
+}
+
+    
+    /* ========== RODAPE========= */
+    footer {
+        padding-top: 20px;
+        background-color: var(--cor-fundofooter);
+    }
+    
+    #footer_content {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 25px;
+        justify-items: center;
+    }
+    
+    .footer_logo img {
+        width: 80px;
+        height: auto;
+        margin-bottom: 8px;
+    }
+    
+    .footer-list, .footer-link {
+        font-family: 'Nunito Sans', sans-serif;
+    }
+    
+    #footer_subscribe {
+        text-align: center;
+        padding: 20px;
+    }
+    
+    #footer-copy {
+        text-align: center;
+        color: #545454;
+    }
+    
+    /* Estilo do box de inscrição por email */
+    #button-email {
+        background-color: var(--cor-fundo);
+        width: 25px;
+        height: 25px;
+    }
+    
+    #email {
+        background-color: var(--cor-fundo);
+        width: 160px;
+        height: 25px;
+        border-color: var(--cor-detalhe);
+        color: var(--cor-texto1);
+    }
+    
+    
+
+/* ========== RODAPE========= */
+/* Garantir que a fonte 'Nunito Sans' seja aplicada a todo o footer */
+footer {
+    background-color: var(--cor-fundofooter);
+    border-top: 20px solid var(--cor-fundofooter);
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+/* Aplica a fonte apenas aos elementos de texto dentro do footer */
+.footer_list, .footer-link, .footer-subscribe h3 {
+    font-family: 'Nunito Sans', sans-serif !important; /* Aplica a fonte ao footer */
+    letter-spacing: 1px;
+    font-family: inherit !important;
+}
+
+/* Estilo do conteúdo dentro do footer */
+#footer_content {
+    font-size: 13px;
+    padding: 9px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    justify-items: center; /* Garante que os itens fiquem centralizados */
+}
+
+/* Estilo para os ícones sociais */
+#footer_social i {
+    font-size: 30px; 
+    margin: 10px; 
+}
+
+/* Estilo do logo e texto do footer */
+.footer_logo p { /* texto linha */
+    text-align: right;
+    font-family: 'Nunito Sans', sans-serif !important; /* Aplica a fonte ao footer */
+    letter-spacing: 1px;
+    color: var(--cor-texto2);
+}
+
+.footer_logo img {
+    align-items: right;
+    width: 80px;
+    height: auto;
+    margin-bottom: 8px;
+    margin-top: 8px;
+}
+.footer-title {
+    font-family: 'Nunito Sans', sans-serif !important; /* Aplica a fonte ao footer */
+    letter-spacing: 1px;
+}
+
+.footer-link {
+    font-family: 'Nunito Sans', sans-serif !important; /* Aplica a fonte ao footer */
+    letter-spacing: 1px;
+    color: var(--cor-texto2);
+    text-decoration: none;
+}
+
+.footer_list {
+    color: var(--cor-titulofooter);
+    display: grid;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+/* Estilos para a seção de inscrição no footer */
+#footer_subscribe h3 {
+    font-family: 'Nunito Sans', sans-serif !important; /* Aplica a fonte ao footer */
+    letter-spacing: 1px;
+    font-size: 30px;
+    color: var(--cor-texto2);
+}
+
+#footer_subscribe p {
+    font-family: 'Nunito Sans', sans-serif !important; /* Aplica a fonte ao footer */
+    letter-spacing: 1px;
+    color: var(--cor-texto2);
+}
+
+#footer_subscribe {
+    
+    font-size: 15px;
+    margin: 10;
+    padding: 10px ;
+    display: grid;
+    place-items: center;
+}
+
+#footer-copy {
+        font-family: 'Nunito Sans', sans-serif !important; /* Aplica a fonte ao footer */
+    letter-spacing: 1px;
+    color: #545454;
+    font-size: 12px;
+    margin: 8px;
+    padding: 8px;
+}
+
+/* Estilo do box de inscrição por email */
+.fa-regular {
+    background-color: var(--cor-fundo);
+}
+
+#button-email {
+    background-color: var(--cor-fundo);
+    width: 25px;
+    height: 25.5px;
+    border-color: var(--cor-detalhe);
+}
+
+#email {
+    background-color: var(--cor-fundo);
+    width: 160px;
+    height: 25px;
+    border-color: var(--cor-detalhe);
+    color: var(--cor-texto1);
+}
+
+
+
+
+
+
+
+

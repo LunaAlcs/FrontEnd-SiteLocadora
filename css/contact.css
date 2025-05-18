@@ -1,0 +1,214 @@
+/* ========FONTE======== */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400;600;800&display=swap');
+
+:root {
+    /*==========SITE=========*/
+    --cor-fundo: #ededed;  
+    --cor-primaria: #202020;
+    --cor-secundaria: ;    
+    --cor-titulo:#030303;
+    --cor-texto: #131313;  
+    --cor-texto3: #f0f0f0;  
+    --cor-detalhe:#313131; 
+    --cor-conteiner:#ffffff;
+
+    /*==========RODAPE=========*/
+    --cor-fundofooter: #0b0b0b;                     
+    --cor-titulofooter: #8d8d8d;   
+    --cor-texto2: #545454;        
+    --cor-button: #c5c5c5;        
+    --cor-link: #1c304e;    
+    }       
+/* ========FONTE======== */
+* {
+    font-family: 'Nunito Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+  }
+  
+  /* ========BODY========== */
+  /* Altera a cor de fundo de toda a página */
+  html body {
+    background-color:var(--cor-fundo); 
+    height: 100%;
+    margin: 0;
+  }
+/* Cor de fundo da navbar */
+.navbar.bg-body-tertiary {
+    background-color: var(--cor-primaria) !important;
+}
+
+/* Cor do texto do título da navbar */
+.navbar-brand {
+    color: var(--cor-detalhe) !important;  /
+}
+
+/* Estilo para a imagem do logo na navbar */
+.navbar-brand img {
+    height: 25px;         
+    width: auto;           
+    max-height: 30px;      
+    margin-right: 20px;    
+}
+
+/* Cor de fundo dos itens de navegação */
+.navbar-nav .nav-link {
+    color: var(--cor-texto3) !important;  
+}
+
+/* Cor do link ativo */
+.navbar-nav .nav-link.active {
+    color: var(--cor-fundo) !important;    
+}
+
+  
+  /* Cor de fundo quando o item é "hovered" */
+  .navbar-nav .nav-link:hover {
+    background-color: var(--cor-detalhe); 
+    color: var(--cor-texto3) !important;
+  }
+  
+  /* Cor de fundo do dropdown */
+  .navbar-nav .dropdown-menu {
+    background-color: var(--cor-primaria);
+  }
+  
+  /* Cor dos itens dentro do dropdown */
+  .navbar-nav .dropdown-item {
+    color: var(--cor-texto3)!important;
+  }
+  
+  /* Cor quando o item do dropdown é "hovered" */
+  .navbar-nav .dropdown-item:hover {
+    background-color: var(--cor-detalhe); 
+    color: var(--cor-texto3) !important;
+  }
+  
+  /* Cor do item ativo */
+  .navbar-nav .nav-link.active {
+    color: var(--cor-texto3) !important; 
+  }
+/* ========CONTEINER E BOTOES======== */
+.text-center {
+    color: var(--cor-titulo);
+}
+.urgent h2{
+    color: var(--cor-titulo);
+}
+.urgent p {
+    color: var(--cor-texto);
+}
+#exemplemail {
+    color: var(--cor-link);
+}
+.custom-card {
+    background-color: var(--cor-conteiner)!important;  
+    border: 1px solid var(--cor-detalhe) !important;    
+}
+.custom-card .card-title {
+    color:(var(--cor-titulo));  
+}
+
+.custom-card .card-text {
+    color: var(--cor-texto); 
+}
+
+.custom-card .btn {
+    background-color: var(--cor-button);  
+    color: var(--cor-texto);  
+    border:1px solid #030303;
+}
+
+.custom-card .btn:hover {
+    background-color: var(--cor-primaria); 
+    color: var(--cor-texto3);  
+    border:1px solid #030303;
+}
+
+
+/* ========== RODAPE========= */
+footer {
+    background-color: var(--cor-fundofooter);
+    border-top: 20px solid var(--cor-fundofooter);
+    width: 100%;    
+    box-sizing: border-box;
+}
+
+#footer_content {
+    font-size: 13px; 
+    padding: 9px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 25px; 
+    justify-items: center; /* Garante que os itens fiquem centralizados */
+}
+#footer_social i {
+    font-size: 30px; 
+    margin: 0 10px; 
+}
+/*FOOTER LIST*/
+.footer_logo p { /*texto linha*/
+    text-align: right;
+    color: var(--cor-texto2);
+}
+.footer_logo img {
+    align-items: right;
+    width: 80px;
+    height: auto;
+    margin-bottom: 8px;
+    margin-top: 8px;
+}
+.footer-link {
+    color: var(--cor-titulofooter);
+    text-decoration: none;
+}
+.footer_list {
+    color: var(--cor-titulofooter);
+    display:grid;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.footer-link {
+    color: var(--cor-texto2)
+}
+/*INSCRIÇAO*/
+#footer_subscribe h3 {
+    font-size: 30px;
+    color:var(--cor-texto2);
+}
+#footer_subscribe p {
+    color: var(--cor-texto2);
+}
+#footer_subscribe {
+    font-size: 15px;
+    margin: 20px;
+    padding: 20px 0;
+    display: grid;
+    place-items: center;
+}
+#footer-copy {
+    color: #545454;
+    font-size: 12px;
+    margin: 8px;
+    padding: 8px;
+  }
+  /* EMAIL SUBSCRIBE BOX*/
+.fa-regular {
+    background-color: var(--cor-fundo);
+}
+#button-email {
+    background-color: var(--cor-fundo);
+    width: 25px;
+    height: 25,5px;
+    border-color: var(--cor-detalhe);
+}
+#email {
+    background-color: var(--cor-fundo);
+    width: 160px;
+    height: 25px;
+    border-color:var(--cor-detalhe);
+    color: var(--cor-texto1)
+}

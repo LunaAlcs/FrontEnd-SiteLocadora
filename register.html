@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="assets/elements/logotitle.png" type="image/x-icon">
+    <title>Cadastro</title>
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="css/register.css">
+
+    <!-- Link Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+          integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Incluindo o Bootstrap 5 (CSS CDN) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <!-- Header / Navbar -->
+    <header>
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+          <!-- Logo -->
+          <a class="navbar-brand" href="home.html">
+            <img src="assets/elements/logodrivego.png" alt="Logo" style="height: 40px;">
+          </a>
+
+          <!-- Botão de alternância para dispositivos móveis -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" 
+                  aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Menu de navegação -->
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="aboutus.html">Sobre-nós</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contato</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="catalog.html">Catálogo</a>
+              </li>
+            </ul>
+
+            <!-- Botões de Login e Cadastro -->
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="btn btn-outline-light" href="login.html">Login</a> <!-- Botão de Login -->
+              </li>
+              <li class="nav-item">
+                <a class="btn btn-outline-light ms-3" href="register.html">Cadastrar</a> <!-- Botão de Cadastro -->
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Formulário de Cadastro -->
+    <div class="login">
+      <div class="caixa">
+        <img src="assets/elements/useerimg.png" alt="">
+        <h1>Cadastro</h1>
+
+        <div class="name"> 
+          <input type="text" placeholder="Nome">
+        </div>
+
+        <div class="email">
+          <input type="email" placeholder="E-mail">
+        </div>
+
+        <div class="senha">
+          <input type="password" placeholder="Senha">
+        </div>
+
+        <div class="senha">
+          <input type="password" placeholder="Confirme sua senha">
+        </div>
+
+        <div class="entrar">
+          <p class="text1">Já tem uma conta? <b><a id="linklogin" href="login.html">Faça login agora mesmo. </a></b></p>
+          <input type="submit" value="Cadastrar">
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div id="footer_content">
+        <div class="footer_logo">
+          <img src="assets/elements/logofooter.png" id="footer_img">
+          <p class="footer_desc">Dirija com qualidade</p>
+          <div id="footer_social">
+            <a href="#" class="footer-link" id="github">
+              <i class="fa-brands fa-square-github"></i>
+            </a>
+            <a href="#" class="footer-link" id="instagram">
+              <i class="fa-brands fa-square-instagram"></i>
+            </a>
+            <a href="#" class="footer-link" id="facebook">
+              <i class="fa-brands fa-square-facebook"></i>
+            </a>
+          </div>
+        </div>
+    
+        <ul class="footer_list">
+          <li><h3 class="footer-title">Explorar</h3></li>
+          <li><a href="#" class="footer-link">Aluguel Mensal</a></li>
+          <li><a href="#" class="footer-link">Aluguel Corporativo</a></li>
+          <li><a href="#" class="footer-link">Ofertas</a></li>
+          <li><a href="#" class="footer-link">Benefícios DriveGo</a></li>
+        </ul>
+    
+        <ul class="footer_list">
+          <li><h3>Ajuda</h3></li>
+          <li><a href="#" class="footer-link">FAQ</a></li>
+          <li><a href="#" class="footer-link">Sobre-nós</a></li>
+          <li><a href="#" class="footer-link">Termos e condições</a></li>
+        </ul>
+    
+        <ul class="footer_list">
+          <li><h3>Cliente</h3></li>
+          <li><a href="#" class="footer-link">Para empresas</a></li>
+          <li><a href="#" class="footer-link">Seguradoras</a></li>
+          <li><a href="#" class="footer-link">Cadastre-se</a></li>
+        </ul>
+      </div>
+
+      <!-- Subscribe -->
+      <div id="footer_subscribe">
+        <h3>Subscribe</h3>
+        <p>Envie-nos seu Email para receber novidades e ofertas</p>
+        <div id="email-box">
+          <input type="email" id="email">
+          <button id="button-email">
+            <i class="fa-regular fa-envelope"></i>
+          </button>
+        </div>
+
+        <div style="color:#545454;" id="footer-copy">
+          &#169; 2024 Todos direitos reservados.
+        </div>
+      </div>
+    </footer>
+
+    <!-- Script do Bootstrap (carregado ao final para melhorar o desempenho) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" defer></script>
+  </body>
+</html>

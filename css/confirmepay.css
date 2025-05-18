@@ -1,0 +1,133 @@
+/* ========FONTE======== */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400;600;800&display=swap');
+
+:root {
+    /*==========SITE=========*/
+    --cor-fundo: #dadada;  
+    --cor-primaria: #202020;
+    --cor-secundaria: ;    
+    --cor-titulo:#030303;
+    --cor-texto: #131313;  
+    --cor-texto3: #f0f0f0;  
+    --cor-detalhe:#313131; 
+    --cor-conteiner:#ffffff;
+
+    /*==========RODAPE=========*/
+    --cor-fundofooter: #0b0b0b;                     
+    --cor-titulofooter: #8d8d8d;   
+    --cor-texto2: #545454;        
+    --cor-button: #c5c5c5;        
+    --cor-link: #1c304e;    
+    }       
+/* ========FONTE======== */
+* {
+    font-family: 'Nunito Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+  }
+  
+
+/* Cor de fundo da navbar */
+.navbar.bg-body-tertiary {
+    background-color: var(--cor-primaria) !important;
+}
+
+/* Cor do texto do título da navbar */
+.navbar-brand {
+    color: var(--cor-detalhe) !important;  /
+}
+
+/* Estilo para a imagem do logo na navbar */
+.navbar-brand img {
+    height: 25px;         
+    width: auto;           
+    max-height: 30px;      
+    margin-right: 20px;    
+}
+
+/* Cor de fundo dos itens de navegação */
+.navbar-nav .nav-link {
+    color: var(--cor-texto3) !important;  
+}
+
+/* Cor do link ativo */
+.navbar-nav .nav-link.active {
+    color: var(--cor-fundo) !important;    
+}
+
+  
+  /* Cor de fundo quando o item é "hovered" */
+  .navbar-nav .nav-link:hover {
+    background-color: var(--cor-detalhe); 
+    color: var(--cor-texto3) !important;
+  }
+  
+  /* Cor de fundo do dropdown */
+  .navbar-nav .dropdown-menu {
+    background-color: var(--cor-primaria);
+  }
+  
+  /* Cor dos itens dentro do dropdown */
+  .navbar-nav .dropdown-item {
+    color: var(--cor-texto3)!important;
+  }
+  
+  /* Cor quando o item do dropdown é "hovered" */
+  .navbar-nav .dropdown-item:hover {
+    background-color: var(--cor-detalhe); 
+    color: var(--cor-texto3) !important;
+  }
+  
+  /* Cor do item ativo */
+  .navbar-nav .nav-link.active {
+    color: var(--cor-texto3) !important; 
+  }
+    /* ========BODY========== */
+html body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--cor-fundo);
+}
+.payment-completion {
+    text-align: center;
+    background-color: var(--cor-conteiner);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.payment-completion h1 {
+    color: #11be01;
+    font-size: 24px;
+}
+.payment-completion p {
+    color: var(--cor-texto);
+    margin: 15px 0;
+}
+.payment-completion .button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    color: #fff;
+    background: var(--cor-detalhe);
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+.payment-completion .button:hover {
+    background: #545454;
+}
+.icon-check {
+    font-size: 48px;
+    color: #28a745;
+    margin-bottom: 10px;
+}

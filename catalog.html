@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <!-- Se precisar de um arquivo CSS externo, defina o caminho corretamente aqui -->
+        <link rel="stylesheet" href="css/catalog.css">
+        <link rel="shortcut icon" href="assets/elements/logotitle.png" type="image/x-icon">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>Catálogo</title>
+    </head>
+<body>
+    <header>
+        <!-- Navbar -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+            <div class="container-fluid">
+<!-- Logo -->
+<a class="navbar-brand" href="home.html">
+  <img src="assets/elements/logodrivego.png" alt="Logo" style="height: 40px;">
+</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Menu de navegação -->
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="aboutus.html">Sobre-nós</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contato</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="catalog.html">Catálogo</a>
+                    </li>
+                </ul>
+
+                    <!-- Botões Login e Cadastro -->
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="btn btn-outline-light" href="login.html">Login</a> <!-- Botão de Login -->
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-outline-light ms-3" href="register.html">Cadastrar</a> <!-- Botão de Cadastro -->
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+      <div id="catalogolist">
+        <ul class="carros-list">
+          <!-- Carro 1 -->
+          <li class="carro" id="renault-kwid">
+            <img src="images/carros/kwid.png.png" alt="Renault Kwid 1.0">
+            <h3 id="carname">Renault Kwid 1.0</h3>
+            <p id="carinfo">Compacto, econômico e de baixo custo de manutenção. Ideal para o uso urbano.</p>
+            <h4 id="carprice">R$ 1.100,00</h4>
+            <button id="buttonlink"><a id="buttontxt" href="../form/formulario.html">Alugue Agora</a></button>
+          </li>
+    
+          <!-- Carro 2 -->
+          <li class="carro" id="fiat-argo">
+            <img src="images/carros/fiatargo2.png.png" alt="Fiat Argo 1.0">
+            <h3 id="carname">Fiat Argo 1.0</h3>
+            <p id="carinfo">Com design sofisticado e recursos de última geração, o carro de luxo é para quem busca exclusividade.</p>
+            <h4 id="carprice">R$ 1.700,00</h4>
+            <button id="buttonlink"><a id="buttontxt" href="../form/formulario.html">Alugue Agora</a></button>
+          </li>
+    
+          <!-- Carro 3 -->
+          <li class="carro" id="vw-polo">
+            <img src="images/carros/polovw.png.png" alt="VW Polo 1.0">
+            <h3 id="carname">VW Polo 1.0</h3>
+            <p id="carinfo">Ideal para quem busca economia de combustível e um carro prático para o dia a dia.</p>
+            <h4 id="carprice">R$ 1.400,00</h4>
+            <button id="buttonlink"><a id="buttontxt" href="../form/formulario.html">Alugue Agora</a></button>
+          </li>
+    
+          <!-- Carro 4 -->
+          <li class="carro" id="chevrolet-s10">
+            <img src="images/carros/cs10.png.png" alt="Chevrolet S10">
+            <h3 id="carname">Chevrolet S10</h3>
+            <p id="carinfo">Uma picape robusta, desempenho e capacidade de carga. Ideal para trabalho e aventuras.</p>
+            <h4 id="carprice">R$ 3.200,00</h4>
+            <button id="buttonlink"><a id="buttontxt" href="../form/formulario.html">Alugue Agora</a></button>
+          </li>
+        </ul>
+        
+    
+        <ul class="carros-list">
+          <!-- Carro 5 -->
+          <li class="carro" id="hyundai-hb20s">
+            <img src="images/carros/hb20s.png" alt="Hyundai HB20S 1.0">
+            <h3 id="carname">Hyundai HB20S</h3>
+            <p id="carinfo">Prático e ágil para o dia a dia, ideal para quem precisa de um carro pequeno para a cidade.</p>
+            <h4 id="carprice">R$ 1.300,00</h4>
+            <button id="buttonlink"><a id="buttontxt" href="../form/formulario.html">Alugue Agora</a></button>
+          </li>
+    
+          <!-- Carro 6 -->
+          <li class="carro" id="gm-onix">
+            <img src="images/carros/pngwing.com.png" alt="GM Onix 1.0">
+            <h3 id="carname">GM Onix 1.0</h3>
+            <p id="carinfo">Perfeito para aventuras, com tração 4x4 e alta resistência para terrenos difíceis.</p>
+            <h4 id="carprice">R$ 1.900,00</h4>
+            <button id="buttonlink"><a id="buttontxt" href="../form/formulario.html">Alugue Agora</a></button>
+          </li>
+    
+          <!-- Carro 7 -->
+          <li class="carro" id="fiat-cronos">
+            <img src="images/carros/Design sem nome.png" alt="Fiat Cronos 1.0">
+            <h3 id="carname">Fiat Cronos 1.0</h3>
+            <p id="carinfo">Tecnologia híbrida, ideal para quem busca um futuro sustentável.</p>
+            <h4 id="carprice">R$ 2.200,00</h4>
+            <button id="buttonlink"><a id="buttontxt" href="../form/formulario.html">Alugue Agora</a></button>
+          </li>
+    
+          <!-- Carro 8 -->
+          <li class="carro" id="citroen-cactus">
+            <img src="images/carros/c3citroen.png" alt="Cactus Citroen C3">
+            <h3 id="carname">Cactus Citroen C3</h3>
+            <p id="carinfo">Conforto e elegância para quem busca um carro de alto desempenho e ótimo espaço interno.</p>
+            <h4 id="carprice">R$ 2.600,00</h4>
+            <button id="buttonlink"><a id="buttontxt" href="../form/formulario.html">Alugue Agora</a></button>
+          </li>
+        </ul>
+      </div>
+    </main>
+    
+    
+
+      <!-- Footer-->
+  <footer>
+    <div id="footer_content">
+      <div class="footer_logo">
+        <img src="assets/elements/logofooter.png" id="footer_img">
+        <p>Dirija com qualidade</p>
+        <div id="footer_social">
+          <a href="#" class="footer-link" id="github">
+            <i class="fa-brands fa-square-github"></i>
+          </a>
+          <a href="#" class="footer-link" id="instagram">
+            <i class="fa-brands fa-square-instagram"></i>
+          </a>
+          <a href="#" class="footer-link" id="facebook">
+            <i class="fa-brands fa-square-facebook"></i>
+          </a>
+        </div>
+      </div>
+      
+      <ul class="footer_list">
+        <li>
+          <h3 class="footer-title">Explorar</h3>
+        </li>
+        <li>
+          <a href="#" class="footer-link">Aluguel Mensal</a>
+        </li>
+        <li>
+          <a href="#" class="footer-link">Aluguel Corporativo</a>
+        </li>
+        <li>
+          <a href="#" class="footer-link">Ofertas</a>
+        </li>
+        <li>
+          <a href="#" class="footer-link">Benefícios DriveGo</a>
+        </li>
+      </ul>
+
+      <ul class="footer_list">
+        <li>
+          <h3>Ajuda</h3>
+        </li>
+        <li>
+          <a href="#" class="footer-link">FAQ</a>
+        </li>
+        <li>
+          <a href="#" class="footer-link">Sobre-nós</a>
+        </li>
+        <li>
+          <a href="#" class="footer-link">Termos e condições</a>
+        </li>
+      </ul>
+      <ul class="footer_list">
+        <li>
+          <h3>Cliente</h3>
+        </li>
+        <li>
+          <a href="#" class="footer-link">Para empresas</a>
+        </li>
+        <li>
+          <a href="#" class="footer-link">Seguradoras</a>
+        </li>
+        <li>
+          <a href="#" class="footer-link">Cadastre-se</a>
+        </li>
+      </ul>
+    </div>
+
+    <div id="footer_subscribe">
+      <h3> Subscribe</h3>
+      <p>
+        Envie-nos seu Email para receber novidades e ofertas
+      </p>
+      <!--CAIXA SUB-->
+      <div id="email-box">
+        <input type="email" id="email">
+        <button id="button-email">
+          <i class="fa-regular fa-envelope"></i>
+        </button>
+      </div>
+      
+      <div style="color:#545454;" id="footer-copy">
+        &#169; 2024 Todos direitos reservados
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
